@@ -9,7 +9,7 @@
 .meny_top {
     background: rgba(34, 34, 34, 1);
     height: 75px;
-    /* position: fixed; */
+   position: fixed; 
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -92,6 +92,7 @@ ul {
 /* 1 контент */
 
 .headPart {
+    padding-top: 75px;
     display: flex;
     width: 100%;
     background: rgba(241, 228, 230, 1);
@@ -140,36 +141,6 @@ span {
 
 /* offer */
 
-/* .offer{
-    display: flex;
-    justify-content: center; 
-    align-items: center; height: 100vh; 
-    background-color: #f0f0f0;
-    
-}
-
-.offer_header1 {
-    background-image: url(./img/presents/2.1.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    align-items: center;
-    height: 100%;
-}
-.offer_header2 {
-    background-image: url(./img/presents/2.2.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    align-items: center;
-}
-.offer_header3 {
-    background-image: url(./img/presents/2.3.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    align-items: center;
-} */
 
 
 .promo-container {
