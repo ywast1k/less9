@@ -1,5 +1,5 @@
-// cart.js
-const cart = JSON.parse(localStorage.getItem('cart')) || [];
+// // cart.js
+// const cart = JSON.parse(localStorage.getItem('cart')) || [];
 
 // Функция для добавления товара в корзину
 function addToCart(item) {

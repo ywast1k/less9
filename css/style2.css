@@ -40,7 +40,7 @@
     color: #F16D7F;
   }
   
-  img {
+  /* img {
     height: 420px;
     transition: filter 0.3s;
     object-fit: contain;
@@ -55,7 +55,7 @@
    
  
   margin: auto;
-  }
+  } */
   
   .bodyContent:hover img {
     filter: brightness(70%);
