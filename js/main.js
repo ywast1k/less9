@@ -14,6 +14,7 @@ data.forEach(element => {
     bodyEl.classList.add('bodyContent'); 
 
     const itemImg = document.createElement('img');
+    itemImg.classList.add('img___sale');
     itemImg.src = element.url;
     itemImg.alt = 'Add to Cart';
 
