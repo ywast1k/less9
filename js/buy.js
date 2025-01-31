@@ -26,6 +26,9 @@ function displayCartItems() {
         const buyEl = document.createElement('div');
         buyEl.classList.add('item');
 
+        // const capacity__img = document.createElement('div');
+        // capacity__img.classList.add('capacity__img');
+
         const itemImg = document.createElement('img');
         itemImg.classList.add('imgPay');
         itemImg.src = element.url;
@@ -75,7 +78,10 @@ function displayCartItems() {
             removeFromCart(index); // Удаляем товар из корзины
         });
         addCart.appendChild(buyEl);
+        
         buyEl.appendChild(itemImg);
+
+        // itemImg.appendChild(capacity__img);
         buyEl.appendChild(itemContentBuy);
         buyEl.appendChild(buttonRem);
         itemContentBuy.appendChild(itemBuyHead);

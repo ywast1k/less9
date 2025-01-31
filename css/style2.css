@@ -1,181 +1,202 @@
- 
-  .cart-box {
-    max-width: 800px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    grid-template-rows: auto auto;
-    grid-template-columns: repeat(3, 1fr); /* Три колонки равной ширины */
-    gap: 20px;
-    justify-content: center;
+ .cart-box {
+   max-width: 800px;
+   margin: 0 auto;
+   display: flex;
+   flex-wrap: wrap;
+   grid-template-rows: auto auto;
+   grid-template-columns: repeat(3, 1fr);
+   /* Три колонки равной ширины */
+   gap: 20px;
+   justify-content: center;
+
+   object-fit: contain;
+   margin-bottom: 50px;
+ }
+
+ .heading2 {
+   font-family: Arial, sans-serif;
+   font-size: 13px;
+   text-align: center;
+   margin-bottom: 25px;
+ }
+
+ .heading {
+   font-family: Arial, sans-serif;
+   font-size: 16px;
+   text-align: center;
+   padding: auto;
+ }
+
+ h2 {
+   color: #9F9F9F;
+ }
+
+ .bodyContent {
+   display: flex;
+   align-content: space-between;
+   flex-wrap: wrap;
+   overflow: hidden;
+   width: 250px;
+   height: 400px;
+
+   position: relative;
+   /* Добавлено для позиционирования кнопки */
+ }
+
+ .item__content {
+   padding-left: 10px;
+ }
+
+ .other {
+   color: #5D5D5D;
+ }
+
+ .price {
+   color: #F16D7F;
+ }
+
+ .add-cart {
+
+   padding: 64px;
+ }
+
+ .item {
+   padding-top: 2px;
+   height: 360px;
+   width: 650px;
+   box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
+   display: flex;
+   overflow: hidden;
+
+
+ }
+
+ .image_Container {
+   height: 280px;
+   margin: 0 auto;
+   overflow: hidden;
+   position: relative;
+   display: flex;
+   justify-content: center;
+
+
+
+ }
+
+ .img___sale {
+   object-fit: cover;
+   max-height: 100%;
+ }
+
+ .overley {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.5);
    
-    object-fit: contain;
-    margin-bottom: 50px;
-  }
-  .heading2 {
-    font-family: Arial, sans-serif;
-    font-size: 13px;
-    text-align: center;
-    margin-bottom: 25px ;
-  }
+   /* Полупрозрачный черный цвет */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   opacity: 0;
+   transition: opacity 0.3s ease;
+ }
 
-  .heading {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    text-align: center;
-    padding: auto;
-  }
-  
-  h2 {
-    color: #9F9F9F;
-  }
-  
-  .bodyContent {
-    display: flex;
-    align-content: space-between;
-    flex-wrap: wrap;
-    overflow: hidden;
-    width: 250px;
-    height: 400px;
-   
-    position: relative; /* Добавлено для позиционирования кнопки */
-  }
-  
-  .item__content {
-    padding-left: 10px;
-  }
-  
-  .other {
-    color: #5D5D5D;
-  }
-  
-  .price {
-    color: #F16D7F;
-  }
-  
-
-  
-  .bodyContent:hover img {
-    /* transition: filter 0.3s ease;
-    filter: brightness(50%); */
-  }
-  
-  .add-cart {
-    
-    padding: 64px;
-  }
-  
-  .item {
-    padding-top: 2px;
-    height: 360px;
-    width: 650px;
-    box-shadow: 17px 19px 24px rgba(0,0,0,0.13); 
-    display: flex;
-    overflow: hidden;
-   
-    
-  }
-  .img___sale{
-    height: 280px;
-    margin: 0 auto;
-    transition: filter 0.3s;
-    object-fit: cover;
-    overflow: hidden; 
-    position: relative;
-    max-width: 100%;
-    max-height: 70%; 
-    object-position: center; 
-  }
-.img___sale:hover{
-    transition: filter 0.3s ease;
-    filter: brightness(50%);
-
-  }
-
-  .imgPay {
+ .overley:hover {
+   opacity: 1;
+ }
 
 
-      max-width: 100%; 
-      max-height: 100%; 
-      object-fit: contain;
-      object-position: center; 
-   
-  width: 1200px;
-  margin: auto;
-    
-  }
-  
-  .item_content {
-    padding-left: 22px;
-    padding-top: 20px;
-    background-color: white;
-  }
-  
-  .item_heading {
-    width: 262px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
-    color: black;
-    margin-bottom: 42px;
-  }
-  
-  .item_text {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 26px;
-    color: #575757;
-    margin-bottom: 6px;
-  }
-  
-  .item_input {
-    width: 44px;
-    height: 24.95px;
-    border: 1px solid #EAEAEA;
-    text-align: center;
-    padding-left: 8px;
-    box-sizing: border-box;
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 22px;
-    color: #656565;
-    margin-left: 24px;
-  }
-  
-  .item_prColor {
-    color: #F16D7F;
-  }
-  
-  .buttonRem {
-    width: 44px;
-    height: 44px;
-    background-color: white;
-    border: #EAEAEA;
-    font-size: 20px;
-    padding: 10px 20px;
-  }
-  
-  /* Стили для кнопки */
-  .button {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: none;
-    padding: 10px 20px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: opacity 0.3s;
-  }
-  
-  .bodyContent:hover .button {
-    display: block;
-  }
-  
+
+ .imgPay {
+
+
+   max-width: 100%;
+   max-height: 100%;
+   object-fit: contain;
+   object-position: center;
+
+   width: 1200px;
+   margin: auto;
+
+ }
+
+ .item_content {
+   padding-left: 22px;
+   padding-top: 20px;
+   background-color: white;
+ }
+
+ .item_heading {
+   width: 262px;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 24px;
+   line-height: 29px;
+   color: black;
+   margin-bottom: 42px;
+ }
+
+ .item_text {
+   font-style: normal;
+   font-weight: 400;
+   font-size: 22px;
+   line-height: 26px;
+   color: #575757;
+   margin-bottom: 6px;
+ }
+
+ .item_input {
+   width: 44px;
+   height: 24.95px;
+   border: 1px solid #EAEAEA;
+   text-align: center;
+   padding-left: 8px;
+   box-sizing: border-box;
+   font-family: 'Lato';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 22px;
+   line-height: 22px;
+   color: #656565;
+   margin-left: 24px;
+ }
+
+ .item_prColor {
+   color: #F16D7F;
+ }
+
+ .buttonRem {
+   width: 44px;
+   height: 44px;
+   background-color: white;
+   border: #EAEAEA;
+   font-size: 20px;
+   padding: 10px 20px;
+ }
+
+ /* Стили для кнопки */
+ .button {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   display: flex;
+   padding: 10px 20px;
+   background-color: #57575700;
+   color: white;
+   border: 1px solid white;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: opacity 0.3s;
+ }
+
+ .bodyContent:hover .button {
+   display: block;
+ }
+
+ .svgButton{
+
+ }

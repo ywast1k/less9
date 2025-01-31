@@ -13,6 +13,17 @@ data.forEach(element => {
     const bodyEl = document.createElement('div');
     bodyEl.classList.add('bodyContent'); 
 
+    const image_Conteiner = document.createElement('div');
+    image_Conteiner.classList.add('image_Container');
+
+    const overley = document.createElement('div');
+    overley.classList.add('overley');
+
+    const svgButton = document.createElement('img');
+    svgButton.classList.add('svgButton');
+    svgButton.alt = 'svg';
+    svgButton.src = './svg/kassa.svg'
+
     const itemImg = document.createElement('img');
     itemImg.classList.add('img___sale');
     itemImg.src = element.url;
@@ -51,11 +62,17 @@ data.forEach(element => {
         });
         displayCartItems();
     });
-
+    
     cartBox.appendChild(bodyEl);
-    bodyEl.appendChild(itemImg);
+ 
+    
+    bodyEl.appendChild(image_Conteiner);
+    image_Conteiner.appendChild(itemImg);
+    bodyEl.appendChild(overley);
+
     bodyEl.appendChild(itemContent);
-    bodyEl.appendChild(button);
+    overley.appendChild(button);
+    button.appendChild(svgButton);
     itemContent.appendChild(itemHead);
     itemContent.appendChild(itemText);
     itemContent.appendChild(itemPrice);
