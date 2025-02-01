@@ -235,12 +235,14 @@ padding: 20px;
 /* бот */
 .background_bot {
     background: rgba(34, 34, 36, 1);
+    padding-bottom: 50px;
+    padding-top: 100px;
 }
 
 .bot_prior {
     margin: auto;
     max-width: 780px;
-    height: 300px;
+    /* height: 300px; */
     text-align: center;
     display: flex;
     gap: 20px;
@@ -249,7 +251,7 @@ padding: 20px;
 
 .pror_3stick {
     margin: auto;
-    max-width: 200px;
+    width: 360px;
     gap: 20px;
 
 
@@ -257,6 +259,7 @@ padding: 20px;
 
 .bot_title {
     margin-top: 30px;
+    padding-bottom: 20px;
     color: white;
     font-family: Arial, sans-serif;
 }
@@ -269,49 +272,50 @@ padding: 20px;
 }
 
 
-.bot_komments {
-    background-image: url(../img/bot/4.2.png);
+.background {
+    background: linear-gradient( rgba(170, 170, 170, 0.5), rgba(255, 255, 255, 0.808) ), url(../img/bot/4.2.png);
+    /* background-image: url(../img/bot/4.2.png) ; */
     background-size: cover;
     background-position: center;
-
-    height: 400px;
-    width: 100vw;
     display: flex;
+
+    justify-content: space-around;
     font-family: Arial, sans-serif;
+    padding: 50px 50px 50px 50px;
 
 
 }
 
 .komment {
-    padding-left: 15%;
-    background-color: rgba(244, 244, 244, 0.7);
+    margin: auto;
     display: flex;
-
     align-items: center;
-    padding-top: 10px;
-    width: 50%;
     flex-direction: column;
     justify-content: center;
-    padding: auto;
+    gap: 15px;
+    padding-bottom: 50px;
+
 }
 
 .p_bot {
+    margin:  auto;
     padding-top: 20px;
-    max-width: 250px;
+    max-width:300px;
     text-align: center;
     font-size: 16px;
 }
 
 .komment img {
+    display: block;
+    margin:  auto;
     border-radius: 50%;
+    max-width: 100px;
 }
 
 .subscribe {
-    padding-right: 15%;
+    margin: auto;
     display: flex;
-    background-color: rgba(244, 244, 244, 0.7);
     align-items: center;
-    width: 50%;
     flex-direction: column;
     justify-content: center;
     gap: 15px;
@@ -356,10 +360,49 @@ img {
     background-color: #ac5b5b;
 }
 
+
+.messenger {
+    padding: 30px 20px 30px 20px;
+    background: black;
+    color: white;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+}
+.text_messenger{
+    padding-top: 10px;
+}
+
+svg {
+    padding: 10px;
+    background: white;
+}
+
+
+
+
+
+
+
+
  .center{
     padding-left: calc(50% - 512px);
     padding-right: calc(50% - 512px);
-} 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         @media (max-width:1024px) {
             .center{
                padding-left: calc(50% - 376px);
@@ -392,7 +435,19 @@ img {
                         .promo-container {
                             padding-top: 50px;
                         }
+                        .bot_prior{
+                            flex-direction: column;}
+                            .bot_prior{
+
+                            }
+                            .background {
+                                display: grid;
+                              }
+                        
                     }
+
+                   
+                  
                 
 
                 @media(max-width:557px) {
@@ -434,5 +489,26 @@ img {
                       .meny_top{
                         justify-content: space-between;
                       }  
+                      .pror_3stick{
+                        width: auto;
+                      }
+                      .background {
+                        display: grid;
+                      }
+                      .subscribe_under_title{
+                        font-size: 15px;
+                      }
+                      .messenger{ 
+                    flex-direction: column-reverse;
+                    margin: auto;
+                      }
+                      .ico {
+                        display: flex;
+                        justify-content: center;
+                      }
+                      .text_messenger{
+                        display: flex;
+                        justify-content: center;
+                      }
                 }
                     
