@@ -516,4 +516,22 @@ svg:hover{
                         justify-content: center;
                       }
                 }
-                    
+            
+
+.tel_hide{
+    position: relative;
+}
+.num_sale::after {
+    position: absolute;
+    content: '5';
+    background: rgba(241, 109, 127, 1);
+    border-radius: 50%;
+    height: 20x;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top:-5px;
+    right: -10px;
+    color: white;
+}
