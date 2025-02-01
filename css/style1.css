@@ -428,7 +428,11 @@ img {
                     .acception{
                         font-size: 1.1em;
                     }
-                
-                        
+                    .tel_hide{
+                        display: none;
+                    }
+                      .meny_top{
+                        justify-content: space-between;
+                      }  
                 }
                     
