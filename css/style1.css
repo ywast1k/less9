@@ -376,8 +376,13 @@ img {
 svg {
     padding: 10px;
     background: white;
+    transition: background-color 0.3s ease;
 }
 
+svg:hover{
+    background-color: rgba(241, 109, 127, 1);
+
+}
 
 
 
